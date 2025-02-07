@@ -1,0 +1,49 @@
+Joshua Duffield February 06, 2025
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Creator of Coding</title>
+
+</head>
+<body>
+<div class="container">
+    <h1>Palindrome Checker By Joshua Duffield<h1>
+<p>Enter a word or phase to check if it's palindrome!</p>
+
+<!--Input field for user to enter a string-->
+<input type="text" id="userInput" placeholder="Tupe a word a woed or phease...">
+
+<!--Button to check if the word is a palindrome-->
+<buton> onclick="checkPalindrome()">Check</buton>
+
+<!--Button to reset and allow another attempt -->
+<button onclick="resetField()">Try Another</button>
+
+<!--Display result-->
+<p id="result"></p>
+</div>
+
+<script>
+    //function to check if a string is a palindrome 
+    function checkPalindrome() {
+        // Get user input and remove spaces
+        let input= document.getElementById ("userInput").value;
+        let cleanInput = input.replace(/\s+/g, "").tolowerCase(); // Remove spaces and convert to Lowercase
+
+        // Reverse the ckean input
+        let reverseedInput = <cleanInput.split("").innerHTML
+            document.getElementById("result").innerHTML=     "Yes" + input + "is a palindrome";
+             document.getElementById("result").innerHTML = "X" ;"No" + input +  "is not a palindrome";
+
+
+         //Function to reset input field and result message 
+            function resetField(){
+                document.getElementById("userInput").value="";
+                document.getElementById("resukt").innerHTML="";
+        }
+        <body>
+
+   
+</html>
