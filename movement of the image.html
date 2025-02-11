@@ -1,0 +1,91 @@
+<!--Josh Duffield This flie creates a web page with "Start" and "Stop" buttons to control the movement of a meme image. The "Start" button moves the image diagonally across the screen, and the "Stop" button stops the movement.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src ="csc move image 2 9 25"></script>
+    <title>Image Movement Control</title>
+    <style>
+        /* Apply a linear graduient background for a creative touch */
+</head>
+<body>
+    {background:linear-gradient(to right,#f7e5f,#feb47b); font-family: Arial, sans-serif; 
+    display: flex;
+    justify-content: center' 
+    align-items:center;
+     height: 100vh; 
+     margin: 0;
+     }
+
+    */ Container to hold the buttons and images */ 
+    .container{
+    text-align:center;
+    }
+    */ Style for meme image */ 
+    #memeimage{
+    position:absolute;
+    top: 80px
+    left:50px
+    width: 150px
+    height: auto
+    transitioon: transforms 0.1s liner;
+    }
+
+    /* Style for the buttons */
+   button {
+   background-color: #4CAF50
+   border:none;
+   color:white;
+   padding: 15px 32px
+   text-decoratior:none;
+   display:inline-block;
+   font-size: 16px
+   margin: 10px
+   cursor: pointer;
+   border-radiius: 5px
+   }
+   
+   /* Disabled button style */
+   button:disabled{
+   background-color: #cccccc;
+   cursor:not-allowed;
+   }
+</style>
+</head>
+<body>
+    <div class= "container">
+    <!--Start button to initiate image movement-->
+    <!--Meme image to be moved-->
+    
+
+    <button id ="startbutton" onclick = "intervalStart();">Start</button>
+    <button id = "stopbutton" onclick =  "intervalStop();">Stop</button>
+    <!--Meme image to be moved-->
+    <img id="memeimage" scr="https://www.chalmers.se/api/media/?url=https://cms.www.chalmers.se/Media/mb3hi4kn/coding-7-1920.jpg" alt="Meme image">
+    </div>
+
+    <script>
+        //Declare variables for the image element and movement interval let memeimage = document.getElementByid("memeimage"); let moveinterval;
+        
+        //Function to start the movement of the image 
+           function stopMovement() {
+            //Enable the Start buttion and disable the Stop button
+
+            document.getElementById("startButton").disabled = false;
+
+            document.getElementById('stopButton'),disabled = true;
+
+            //Clear the interval to stop the image movement
+
+            clearinterval(movementinterval);
+           }
+           
+    <p id = "xandy"> x and y coordinates</p>
+           
+    </script>
+
+    
+</body>
+</html>
